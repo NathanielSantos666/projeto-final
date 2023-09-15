@@ -1,0 +1,45 @@
+let tarefas = [];
+
+
+function opcaoCriarArquivo() {
+    console.log("Você escolheu a Opção 1.");
+    let titulo = prompt('Insira o titulo do seu documento.')
+    let descrição = prompt('Insira a descrição do seu documento.')
+    let pendente = 'pendente'
+    let tarefa = {tituloTarefa: titulo, descricaoTarefa: descrição, status: pendente};
+    tarefas.push(tarefa);
+    console.log(tarefas);
+    console.log('--------------------------------');
+}
+  
+
+  function opcaoVisualizar() {
+    console.log("Você escolheu a Opção 2.");
+    let visualizar = {tarefas}
+  }
+  
+  function opcao3() {
+    console.log("Você escolheu a Opção 3.");
+  }
+  
+  function exibirMenu() {
+    console.log("Selecione uma opção:");
+    console.log("1. Criar arquivo");
+    console.log("2. Visualizar arquivos");
+    console.log("3. ");
+
+  }
+  
+  exibirMenu();
+  
+   const escolha = prompt("Digite o número da opção desejada:");
+  
+  if (escolha === "1") {
+    opcaoCriarArquivo();
+  } else if (escolha === "2") {
+    opcaoVisualizar();
+  } else if (escolha === "3") {
+    opcao3();
+  } else {
+    console.log("Opção inválida.");
+  } 
